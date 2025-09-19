@@ -21,7 +21,7 @@ public class Main {
              * uso de las funciones auxiliares creadas para la funcionalidad de este ejercicio */
             for (int i = 1; i <= cantidadCocodrilos; i++) {
                 nombreCocodrilo = sc.nextLine();
-                if (!cuentaLetras(nombreCocodrilo) && compruebaCocodrilo(nombreCocodrilo)) { // Si fuera falso que no tiene mas de 10 letras lo añado a la lista
+                if (!cuentaLetras(nombreCocodrilo) && compruebaCocodrilo(nombreCocodrilo)) {
                     cocodrilosLlorando++;
                     System.out.println(nombreCocodrilo + " Llora"); // Mostramos al vuelo si llora o no
                 }
