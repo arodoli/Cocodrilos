@@ -16,7 +16,7 @@ public class Main {
         cantidadCocodrilos = Integer.parseInt(sc.nextLine());
 
         // Compruebo que la cantidad de cocodrilos sea correcta
-        if(cantidadCocodrilos<1 || cantidadCocodrilos>50) {
+        if(cantidadCocodrilos>1 && cantidadCocodrilos<50) {
             /* Interamos tantas veces como cocodrilos lleguen a la fiesta, haciendo
              * uso de las funciones auxiliares creadas para la funcionalidad de este ejercicio */
             for (int i = 1; i <= cantidadCocodrilos; i++) {
@@ -28,6 +28,8 @@ public class Main {
             }
             // Imprimimos por pantalla los cocodrilos que lloran:
             System.out.println("La cantidad de cocodrilos que lloran es de: " + cocodrilosLlorando);
+        }else{
+            System.out.println("La cantidad de cocodrilos es erronea");
         }
     }
 
